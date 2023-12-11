@@ -1,0 +1,25 @@
+<script type="text/javascript">
+document.write("Code in a loop:<br/>");
+let i = 0;
+while (i < 5) {
+    document.write(i + " Hello, Miami!<br/>");
+    i = i + 1;
+}
+
+document.write("Code in a function:<br/>");
+function hello(i) {
+    if (i === undefined) {
+        i = 0;
+    }
+
+    document.write(i + " Let's go Dolphins!<br/>");
+    i = i + 1;
+    if (i < 5) {
+        hello(i);
+    }
+    else {
+        return;
+    }
+}
+hello();
+</script>
